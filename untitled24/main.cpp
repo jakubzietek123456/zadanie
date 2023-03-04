@@ -7,7 +7,11 @@ int main() {
     cin >> a;
     cout << "Podaj b: ";
     cin >> b;
-    c = a * b;
-    cout << "Wynik mnozenia a i b to: " << c << endl;
+    if (b == 0) {
+        cout << "Błąd: Nie można dzielić przez zero." << endl;
+        return 1;
+    }
+    c = a / b;
+    cout << "Wynik dzielenia a przez b to: " << c << endl;
     return 0;
 }
